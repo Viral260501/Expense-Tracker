@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manager Dashboard — Expense Manager</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="app-header profile-header">
+      <div class="profile-left">
+        <div id="avatar" class="avatar">M</div>
+        <div>
+          <div id="userName" class="user-name">Manager</div>
+          <div id="userEmail" class="muted">manager@example.com</div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="darkToggle" class="icon-btn">🌙</button>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="summary-row">
+        <div>
+          <div class="muted">All expenses</div>
+          <div id="total" class="big">₹ 0</div>
+        </div>
+        <div>
+          <div class="muted">Pending</div>
+          <div id="pendingCount" class="big">0</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chart canvases will be injected by app.js (requires Chart.js CDN) -->
+    <section id="expensesSection">
+      <div class="section-title">All expenses</div>
+      <div id="expensesList" class="cards-list"></div>
+    </section>
+
+    <nav class="bottom-nav">
+      <button class="nav-item active">Expenses</button>
+      <button class="nav-item" id="navProfile">Profile</button>
+      <button class="nav-item" id="logoutBtn">Logout</button>
+    </nav>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

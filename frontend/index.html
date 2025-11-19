@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Expense Manager — Login</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <main class="container">
+
+    <header class="app-header">
+      <h1>Expense Manager</h1>
+      <div class="header-actions">
+        <button id="darkToggle" class="icon-btn">🌙</button>
+      </div>
+    </header>
+
+    <section class="card">
+
+      <!-- FIXED ROLE SELECT (text left, radio right) -->
+      <div class="role-select">
+        <div class="role-row">
+          <span>Login as Employee</span>
+          <input type="radio" name="role" value="employee" checked>
+        </div>
+
+        <div class="role-row">
+          <span>Login as Manager</span>
+          <input type="radio" name="role" value="manager">
+        </div>
+      </div>
+
+      <!-- Login Form -->
+      <form id="loginForm" class="form">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+
+      <div class="links">
+        <a href="signup.html">Sign up</a> |
+        <a href="forgot.html">Forgot password</a>
+      </div>
+
+      <div id="msg" class="msg"></div>
+    </section>
+
+    <nav class="bottom-nav">
+      <button class="nav-item active">Home</button>
+      <button class="nav-item">About</button>
+      <button class="nav-item">Contact</button>
+    </nav>
+
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

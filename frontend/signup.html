@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign up — Expense Manager</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="app-header">
+      <h1>Create account</h1>
+      <div class="header-actions">
+        <button id="darkToggle" class="icon-btn">🌙</button>
+      </div>
+    </header>
+
+    <section class="card">
+      <form id="signupForm" class="form">
+        <input type="text" id="name" placeholder="Full name" required autocomplete="name">
+        <input type="email" id="email" placeholder="Email" required autocomplete="email">
+        <input type="password" id="password" placeholder="Password" required autocomplete="new-password">
+        <select id="role" aria-label="Role">
+          <option value="employee">Employee</option>
+          <option value="manager">Manager</option>
+        </select>
+        <button type="submit" class="btn-primary">Create account</button>
+      </form>
+
+      <div class="links">
+        <a href="index.html">Back to login</a>
+      </div>
+      <div id="msg" class="msg"></div>
+    </section>
+
+    <nav class="bottom-nav">
+      <button class="nav-item active">Home</button>
+      <button class="nav-item">Support</button>
+      <button class="nav-item">FAQ</button>
+    </nav>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

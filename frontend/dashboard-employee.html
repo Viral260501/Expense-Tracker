@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Employee Dashboard — Expense Manager</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="app-header profile-header">
+      <div class="profile-left">
+        <div id="avatar" class="avatar">A</div>
+        <div>
+          <div id="userName" class="user-name">You</div>
+          <div id="userEmail" class="muted">you@example.com</div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="darkToggle" class="icon-btn">🌙</button>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="summary-row">
+        <div>
+          <div class="muted">Total expenses</div>
+          <div id="total" class="big">₹ 0</div>
+        </div>
+        <button id="addExpenseOpen" class="btn-secondary">+ New</button>
+      </div>
+
+      <form id="expenseForm" class="form collapsed" enctype="multipart/form-data">
+        <input id="title" placeholder="Title" required />
+        <input id="amount" type="number" placeholder="Amount" required />
+        <input id="date" type="date" />
+        <textarea id="notes" placeholder="Notes" rows="2"></textarea>
+        <!-- category and file inputs added dynamically by app.js -->
+        <div class="row">
+          <button type="submit" class="btn-primary">Save (Pending)</button>
+          <button id="cancelAdd" type="button" class="btn-ghost">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="expensesSection">
+      <div class="section-title">Your expenses</div>
+      <div id="expensesList" class="cards-list"></div>
+    </section>
+
+    <nav class="bottom-nav">
+      <button class="nav-item active">Expenses</button>
+      <button class="nav-item" id="navProfile">Profile</button>
+      <button class="nav-item" id="logoutBtn">Logout</button>
+    </nav>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
