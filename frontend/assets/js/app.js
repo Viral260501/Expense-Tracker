@@ -1,7 +1,8 @@
 // frontend/assets/js/app.js
 // Updated: charts, receipts, categories, profile, PWA, dark mode, notifications
 
-const API = 'http://localhost:5000/api'; // update if backend hosted elsewhere
+const API = 'https://expense-tracker-3i6x.onrender.com/api';
+ // update if backend hosted elsewhere
 let chartInstances = {};
 
 // ---------- Utilities ----------
